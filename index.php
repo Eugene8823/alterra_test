@@ -52,8 +52,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 		<div class="contact">
 			<div class="name"><? echo $row['name']; ?><a href="/?del&id=<? echo $row['id']; ?>" class="del" onclick="if(!window.confirm('Удалить?')) return false;">&times;</a></div>
 			<div class="phone"><? echo preg_replace("/([0-9]{1})([0-9]{3})?([0-9]{3})?([0-9]{2})?([0-9]{2})?/", "$1 $2 $3 $4 $5", $row['phone']); ?></div>
-
-
 		</div>
 <?
 				}
